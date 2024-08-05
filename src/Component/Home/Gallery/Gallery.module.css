@@ -47,7 +47,7 @@
 /* Image Container */
 .gallery_grid_gallery {
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* max-width: 1200px; */
     margin: 0 auto;
     padding: 50px 20px;
@@ -63,6 +63,7 @@
     background-color: #fefefe;
     overflow: hidden;
     cursor: zoom-in;
+    border-radius: 5px;
 }
 
 .ggg_grid_item img {
