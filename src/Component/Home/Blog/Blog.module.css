@@ -1,0 +1,175 @@
+.blog_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* text container */
+.bcontainer_intro {
+    width: 100%;
+    /* display: flex; */
+    text-align: center;
+}
+
+.title_tag {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.title_title {
+    font-size: 41px;
+    margin-bottom: 10px;
+}
+
+
+/* Blog Post  */
+.bcontainer_post {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.bcp_box {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0;
+    text-wrap: wrap;
+}
+
+.bcp_img_container {
+    width: 25vw;
+    overflow: hidden;
+}
+
+.imgc_img {
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in;
+
+}
+
+.imgc_img:hover {
+    transform: scale(1.1);
+}
+
+/* box -> rxr container */
+.bcp_txt_container {
+    background: #fcfcfc;
+    width: 25vw;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+
+.txtctr_p {
+    display: flex;
+    gap: 10px;
+    text-wrap: nowrap;
+}
+
+.txtc_cate {
+    color: #ff656a;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.txtc_date {
+    color: #aebccb;
+    font-size: 14px;
+}
+
+
+.txtc_title {
+    font-size: 24px;
+    color: #112957;
+    text-wrap: wrap;
+}
+
+.txtc_rm {
+    font-size: 14px;
+    color: #c4c4c4;
+    cursor: pointer;
+}
+.txtc_rm:hover{
+    color: red;
+}
+
+@media(max-width:865px) {
+    .txtc_cate {
+        font-size: 13px;
+    }
+    .txtc_date {
+        font-size: 12px;
+    }
+
+    .txtc_title {
+        font-size: 20px;
+    }
+}
+@media(max-width:750px){
+    .bcp_img_container {
+        width: 45vw;
+    }
+    .bcp_txt_container {
+        width: 45vw;
+    }
+    .bcontainer_post {
+        justify-content:center;
+        align-items: center;
+    }
+    
+    
+}
+@media(max-width:500px){
+    .bcp_img_container {
+        width: 60vw;
+    }
+    .bcp_txt_container {
+        width: 60vw;
+    }
+    
+}
+@media(max-width:710px) {
+    .txtc_cate {
+        font-size: 11px;
+    }
+    .txtc_date {
+        font-size: 8px;
+    }
+
+    .txtc_title {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:560px) {
+    .txtc_cate {
+        font-size: 11px;
+    }
+    .txtc_date {
+        font-size: 8px;
+    }
+
+    .txtc_title {
+        font-size: 10px;
+    }
+}
