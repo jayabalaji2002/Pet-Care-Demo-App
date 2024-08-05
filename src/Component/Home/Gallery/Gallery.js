@@ -17,25 +17,25 @@ function Gallery() {
                 </div>
 
                 {/* Image Container */}
-                <div className={gallery.gallery_img_container}>
+                <div className={gallery.gallery_grid_gallery}>
 
                     {/* Box1 */}
-                    <div className={gallery.gic_box1}>
-                        <div className={gallery.gc_img_container_1}>
-                            <img src={Gallery_img1} alt='gallery images' />
-                        </div>
-                        <div className={gallery.gc_img_container_2}>
-                        </div>
+                    <div className={gallery.ggg_grid_item}>
+                        <img src={Gallery_img1} alt='gallery images' />
+                    </div>
+                    <div className={gallery.ggg_grid_item}>
+                        <img src={Gallery_img2} alt='gallery images' />
                     </div>
 
                     {/* Box 2 */}
-                    <div className={gallery.gic_box2}>
-                        <div className={gallery.gc_img_container_3}>
+                    {/* <div className={gallery.gic_box1}>
+                        <div className={gallery.ggg_grid_item}>
+                            <img src={Gallery_img3} alt='gallery images' />
                         </div>
-                        <div className={gallery.gc_img_container_4}>
+                        <div className={gallery.ggg_grid_item}>
                             <img src={Gallery_img4} alt='gallery images' />
                         </div>
-                    </div>
+                    </div> */}
 
 
                 </div>
