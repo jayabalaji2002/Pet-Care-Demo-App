@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
 import header from "./Header.module.css"
-import Service from '../Service/Service';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa6";
+import Service from '../Service/Service';
 import BetterServices from '../BetterServices/BetterServices';
 import TeamMembers from '../TeamMembers/TeamMembers';
 import ContactForm from '../ContactForm/ContactForm';
 import Blog from '../Blog/Blog';
 import Contact from '../Contact/Contact';
-// import Testimonial from '../Testimonial/Testimonial';
+import Testimonial from '../Testimonial/Testimonial';
 import Gallery from '../Gallery/Gallery';
 // import { Link } from 'react-router-dom';
 
@@ -58,13 +58,13 @@ function Header() {
         </div>
       </div>
       <Service />
-      <BetterServices/>
-      <Gallery/>
-      <TeamMembers/>
-      <ContactForm/>
-      {/* <Testimonial/> */}
-      <Blog/>
-      <Contact/>
+      <BetterServices />
+      <Gallery />
+      <TeamMembers />
+      <ContactForm />
+      <Testimonial />
+      <Blog />
+      <Contact />
     </Fragment>
   );
 }

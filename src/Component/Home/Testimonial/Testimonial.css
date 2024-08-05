@@ -1,0 +1,88 @@
+.testimonial_section {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center ;
+}
+
+.testimonial_ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+    background: url("../../../Assets/img/gallery/section_bg03.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mySwiper {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ff0000;
+    /* Change this to your desired color */
+    opacity: 1;
+    /* Ensure the bullet is fully opaque */
+    font-size: 16px;
+}
+.swiper-pagination-bullet-active {
+    background-color: white; /* Change this to your desired active color */
+  }
+.ctr_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px 10px;
+}
+.box_img{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+.img_ctr_h2{
+font-size: 25px;
+}
+
+.img_ctr_proffes{
+    font-size: 16px;
+    color: #506172;
+}
+
+.box_about{
+    width: 70%;
+    padding: 30px 0;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.about_ctr_p{
+    font-size: 16px;
+}
+@media(max-width:450x){
+    .box_about{
+        width: 100%;
+    }
+    .about_ctr_p{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
