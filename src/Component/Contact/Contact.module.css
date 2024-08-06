@@ -20,6 +20,9 @@
     .htxt_background {
         height: 350px;
     }
+    .text_h1_header {
+        font-size: 30px;
+    }
 }
 
 @media(min-width:769px) {

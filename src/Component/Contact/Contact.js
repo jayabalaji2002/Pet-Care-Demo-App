@@ -10,12 +10,20 @@ function Contact() {
         </div>
       </div>
 
-
+      {/* start */}
       <div className={ctct.contact_container}>
         <div className={ctct.contact_section}>
+          <div className={ctct.contact_map_ctr}>
+            <div className={ctct.map}>
+
+            </div>
+          </div>
+          <div className={ctct.contact_form_ctr}>
+
+          </div>
         </div>
       </div>
-      
+
     </div>
   )
 }
