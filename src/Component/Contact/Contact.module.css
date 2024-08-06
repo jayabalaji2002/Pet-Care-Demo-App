@@ -1,11 +1,10 @@
-
-.header_txt{
+.header_txt {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.htxt_background{
+.htxt_background {
     background: url("../../Assets/img/hero/hero2.png");
     width: 100%;
     height: 200px;
@@ -16,65 +15,61 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media(min-width:426px){
-    .htxt_background{
+
+@media(min-width:426px) {
+    .htxt_background {
         height: 350px;
     }
 }
-@media(min-width:769px){
-    .htxt_background{
+
+@media(min-width:769px) {
+    .htxt_background {
         height: 400px;
     }
 }
 
 
-.text_h1_header{
+.text_h1_header {
     font-size: 50px;
+    margin-top: 50px;
 }
 
 
 
 /* conatct  */
-.contact_container{
+.contact_container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contact_section{
+
+.contact_section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: 1px solid blue;
     width: 80%;
+    padding: 50px 0;
 }
 
-@media(max-width:425px){
-    .contact_section{
+
+.contact_map_ctr {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 500px;
+    max-width: 1200px;
+}
+
+@media(max-width:425px) {
+    .contact_section {
         width: 90%;
     }
 }
+@media(max-width:1024px) {
+    .contact_map_ctr {
+        height: 300px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.map {}
