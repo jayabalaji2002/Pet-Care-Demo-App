@@ -5,6 +5,16 @@ import { TbGridDots } from "react-icons/tb";
 function About() {
   return (
     <div className={about.about_section}>
+
+      <div className={about.header_txt}>
+        <div className={about.htxt_background}>
+           <h1 className={about.text_h1_header}>About Us</h1>     
+        </div>
+      </div>
+
+
+
+
       <div className={about.about_container}>
 
         {/* Text container */}
