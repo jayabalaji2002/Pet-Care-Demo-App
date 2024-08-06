@@ -3,32 +3,9 @@ import blog from "./Blog.module.css"
 import blogImg1 from "../../../Assets/img/gallery/blog1.png"
 import blogImg2 from "../../../Assets/img/gallery/blog2.png"
 import blogImg3 from "../../../Assets/img/gallery/blog3.png"
+import { LuDot } from "react-icons/lu";
 
 function Blog() {
-    const blogData = [
-        {
-            id: 1,
-            category: "Pet Food",
-            Date: "Nov 30 2020",
-            title: "Amazing Places To Visit In Summer",
-            image: blogImg1
-        },
-        {
-            id: 2,
-            category: "Pet Food",
-            Date: "Nov 30 2020",
-            title: "Amazing Places To Visit In Summer",
-            image: blogImg2
-        },
-        {
-            id: 3,
-            category: "Pet Food",
-            Date: "Nov 30 2020",
-            title: "Amazing Places To Visit In Summer",
-            image: blogImg3
-        },
-    ]
-
 
     return (
         <div className={blog.blog_section}>
@@ -56,6 +33,7 @@ function Blog() {
 
                             <div className={blog.txtctr_p}>
                                 <p className={blog.txtc_cate}>Pet food</p>
+                                <LuDot className={blog.txtc_dot}/>
                                 <p className={blog.txtc_date}> Nov 30, 2020</p>
                             </div>
 
@@ -70,7 +48,7 @@ function Blog() {
                     <div className={blog.bcp_box}>
 
                         <div className={blog.bcp_img_container}>
-                            <img src={blogImg3} alt='/imgs' className={blog.imgc_img} />
+                            <img src={blogImg1} alt='/imgs' className={blog.imgc_img} />
                         </div>
 
                         {/* text div */}
@@ -79,6 +57,7 @@ function Blog() {
 
                             <div className={blog.txtctr_p}>
                                 <p className={blog.txtc_cate}>Pet food</p>
+                                <LuDot className={blog.txtc_dot}/>
                                 <p className={blog.txtc_date}> Nov 30, 2020</p>
                             </div>
 
@@ -93,7 +72,7 @@ function Blog() {
                     <div className={blog.bcp_box}>
 
                         <div className={blog.bcp_img_container}>
-                            <img src={blogImg3} alt='/imgs' className={blog.imgc_img} />
+                            <img src={blogImg2} alt='/imgs' className={blog.imgc_img} />
                         </div>
 
                         {/* text div */}
@@ -102,6 +81,7 @@ function Blog() {
 
                             <div className={blog.txtctr_p}>
                                 <p className={blog.txtc_cate}>Pet food</p>
+                                <LuDot className={blog.txtc_dot}/>
                                 <p className={blog.txtc_date}> Nov 30, 2020</p>
                             </div>
 

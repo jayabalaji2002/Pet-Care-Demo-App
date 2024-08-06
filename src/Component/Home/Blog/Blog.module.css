@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
 .blog_container {
@@ -83,15 +84,17 @@
     display: flex;
     gap: 10px;
     text-wrap: nowrap;
+    align-items: center;
 }
 
 .txtc_cate {
     color: #ff656a;
     font-size: 16px;
     cursor: pointer;
-
 }
-
+.txtc_dot{
+    font-size: 28px;
+}
 .txtc_date {
     color: #aebccb;
     font-size: 14px;

@@ -1,55 +1,63 @@
 .nb_section {
-    background: url("../../Assets/img/hero/hero2.png");
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 100;
-}
-
-.nb_container {
+    width: 100%;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it stays above other elements */
+  }
+  
+  .nb_container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 90%;
     height: 100px;
-}
-
-.nb_logo {
+  }
+  
+  .nb_logo {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-self: start;
     width: auto;
-}
-
-/* UL Container */
-.ul_container {
+  }
+  
+  .nav_text_ctr {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* UL Container */
+  .ul_container {
     display: inline-block;
-}
-
-.ul__container {
+  }
+  
+  .ul__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
     gap: 0;
     justify-self: flex-end;
-}
-
-.ul__li {
+  }
+  
+  .ul__li {
     padding: 20px;
-}
-
-/* Toggle */
-.show_ul {
+  }
+  
+  /* Toggle */
+  .show_ul {
     display: block; /* Ensure this displays correctly when toggled */
-}
-
-/* Contact Button */
-.btn_container {
+  }
+  
+  /* Contact Button */
+  .btn_container {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -59,51 +67,58 @@
     border-radius: 30px;
     justify-self: flex-end;
     color: white;
-}
-
-/* Menu Icon */
-.menu {
+  }
+  
+  /* Menu Icon */
+  .menu {
     font-size: 30px;
     cursor: pointer;
     padding: 10px;
     display: none; /* Initially hidden */
-}
-.menu_class{
+  }
+  .menu_class {
     color: var(--vibrant-primary);
-}
-
-/* Other styles remain unchanged */
-
-/* Media Query for Mobile */
-@media (max-width: 870px) {
+  }
+  
+  /* Sticky Navbar */
+  .sticky {
+    background-color: white; /* Background color when sticky */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 905px) {
     .ul_container {
-        padding: 20px 0;
-        display: none;
-        background-color: aliceblue; /* Set your desired background color */
-        height: 100vh; /* Full viewport height */
+      padding: 20px 0;
+      display: none;
+      background-color: aliceblue; /* Set your desired background color */
+      height: 100vh; /* Full viewport height */
     }
-
+  
     .ul__container {
-        position: absolute;
-        top: 100px;
-        left: 0;
-        background-color: white;
-        height: calc(100vh - 400px); /* Full height minus the navbar height */
-        width: 100%;
-        flex-direction: column;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: white;
+      height: calc(100vh - 400px); /* Full height minus the navbar height */
+      width: 80%;
+      flex-direction: column;
+      height: fit-content;
     }
-
+  
     .btn_container {
-        display: none;
+      display: none;
     }
-
+  
     .menu {
-        display: block; /* Show menu icon on mobile */
+      display: block; /* Show menu icon on mobile */
     }
-
+  
     /* Show the menu when the toggle class is added */
     .show_ul {
-        display: block; /* This will allow the menu to be displayed when toggled */
+      display: block; /* This will allow the menu to be displayed when toggled */
     }
-}
-
+  }
+  

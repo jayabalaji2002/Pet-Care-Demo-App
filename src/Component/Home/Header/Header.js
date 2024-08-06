@@ -60,8 +60,8 @@ function Header() {
       <Service />
       <BetterServices />
       <Gallery />
-      <TeamMembers />
       <ContactForm />
+      <TeamMembers />
       <Testimonial />
       <Blog />
       <Contact />

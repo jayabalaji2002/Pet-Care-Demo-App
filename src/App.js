@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import PreLoader from "./Component/PreLoader/PreLoader.jsx";
 import { Routes, Route } from "react-router-dom"
 import Navbar from "./Component/Navbar/Navbar"
+// import Nav from "./Component/Nav/Nav.js"
 import './Component/Global.css'
 import './App.css'
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <Suspense fallback={<PreLoader />}>
+        {/* <Nav/> */}
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />

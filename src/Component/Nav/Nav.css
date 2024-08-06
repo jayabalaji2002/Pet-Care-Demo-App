@@ -1,0 +1,97 @@
+.nav-section {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px 30px;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+
+
+
+.nav {
+    margin-right: 20px;
+}
+
+.nav-ctr {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    border: 1px solid green;
+}
+
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li :link {
+    display: block;
+    font-size: 16px;
+    padding: 0 20px;
+    color: #112957;
+}
+
+
+.nav ul li :link:hover {
+    color: var(--vibrant-primary);
+}
+
+
+
+
+/* Contact Button */
+.btn_container {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vibrant-primary);
+    padding: 18px 36px;
+    border-radius: 30px;
+    justify-self: flex-end;
+    color: white;
+    height: fit-content;
+}
+
+@media (max-width:930px) {
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .ham {
+        font-size: 26px;
+    }
+
+    .btn_container {
+        display: none;
+    }
+
+    .nav-ctr {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        width: 80vw;
+        margin: auto;
+        background: aliceblue;
+        transition: 0.5s ease-out;
+    }
+    .nav ul{
+        display: block;
+    }
+
+}
