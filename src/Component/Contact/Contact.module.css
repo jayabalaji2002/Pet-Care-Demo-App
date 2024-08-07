@@ -20,6 +20,7 @@
     .htxt_background {
         height: 350px;
     }
+
     .text_h1_header {
         font-size: 30px;
     }
@@ -51,17 +52,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid blue;
     width: 80%;
     padding: 50px 0;
 }
 
 
 .contact_map_ctr {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 100%;
-    height: 500px;
-    max-width: 1200px;
+    height: 100%;
+    max-width: 1220px;
+}
+.map_data{
+    width: 100%;
+    height: 50vh;
+    border: none;
+    border-radius: 5px;
 }
 
 @media(max-width:425px) {
@@ -69,10 +75,172 @@
         width: 90%;
     }
 }
+
 @media(max-width:1024px) {
-    .contact_map_ctr {
-        height: 300px;
+    .map_data{
+        height: 30vh;
     }
 }
 
-.map {}
+
+
+
+
+
+/* Form ctr */
+.contact_form_ctr {
+    width: 100%;
+    max-width: 1220px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+/* git */
+.form_ctr_git {
+    flex: 2;
+    padding: 20px 0;
+}
+
+.git_h1 {
+    font-size: 32px;
+    color: #0b1c39;
+    margin: 0 0 20px;
+    font-weight: 500;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    resize: none;
+    margin: 0 0 20px;
+    color: #212529;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.git_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.git_inp_ctr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 20px;
+}
+
+.inp__inp1 {
+    flex: 1;
+    padding: 20px;
+    color: #212529;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.inp__inp2 {
+    flex: 1;
+    padding: 20px;
+    color: #212529;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.git_inp_sub {
+    padding: 20px;
+    margin: 0 0 20px;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.git_inp_btn {
+    padding: 18px 44px;
+    background: #fff;
+    color: #ff2121;
+    border: 1px solid #ff2121;
+    outline: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
+}
+.git_inp_btn:hover {
+    background: #ff2121;
+    color: #fff;
+    border: 1px solid #ff2121;
+}
+
+
+/* Address ctr */
+.form_ctr_address {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.address {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.add_icon{
+    font-size: 27px;
+    color: #212529;
+    margin-top: 8px;
+}
+.txt_pa{
+    font-size: 16px;
+    color: #2a2a2a;
+}
+.txt_ch{
+    color: #8a8a8a;
+    font-size: 16px;
+}
+
+
+
+@media(max-width:900px) {
+    .contact_form_ctr {
+        flex-direction: column;
+    }
+
+    .form_ctr_git {
+        flex: 1;
+        width: 100%;
+    }
+
+    .form_ctr_address {
+        flex: 1;
+        width: 100%;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    .form_ctr_address {
+        padding: 20px 20px 20px 0;
+        margin-top: 30px;
+    }
+
+    .git_h1 {
+        font-size: 25px;
+    }
+}
