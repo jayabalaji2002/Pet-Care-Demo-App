@@ -356,7 +356,6 @@
 /* Recent post */
 
 .rctr_recent_post{
-    border: 1px solid green;
     width: 100%;
     padding: 30px 20px;
     background:#fbf9ff;
@@ -377,7 +376,6 @@
 }
 
 .post_ctr{
-    border: 1px solid lawngreen;
     display: flex;
     gap: 10px;
     flex-wrap: nowrap;
@@ -419,3 +417,58 @@
 }
 
 /* Tags */
+
+.rctr_tags{
+    border: 1px solid green;
+    width: 100%;
+    padding: 30px 20px;
+    background:#fbf9ff;
+}
+
+.tags_h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0b1c39;
+    margin-bottom: 20px;
+}
+
+.tags_h3::after{
+    content: "";
+    display: block;
+    padding-top: 15px;
+    border-bottom: 1px solid #f0e9ff;
+}
+
+.tags__ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+
+.tags__ul_li{
+    background: #fff;
+    color: #888;
+    padding: 4px 20px;
+    border: 1px solid #b9b9b9;
+    margin: 0 3px 8px 0;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
