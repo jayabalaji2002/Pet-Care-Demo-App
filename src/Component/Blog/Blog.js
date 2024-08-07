@@ -33,7 +33,7 @@ function Blog() {
 
           {/* Left ctr */}
           <div className={blog.blog_ctr_left}>
-            
+
             <div className={blog.left_card_ctr}>
 
               {/* Box 1 */}
@@ -56,14 +56,14 @@ function Blog() {
 
                   <ul className={blog.txt_ctr_ul}>
                     <li className={blog.ul__li_1}>
-                      <FaUser  className={blog.li_1__icon}/>
+                      <FaUser className={blog.li_1__icon} />
                       <p className={blog.li_1__p}>Travel, Lifestyle</p>
                     </li>
                     <li className={blog.ul__li_1}>
-                      <FaComment  className={blog.li_1__icon}/>
+                      <FaComment className={blog.li_1__icon} />
                       <p className={blog.li_1__p}>03 Comments</p>
                     </li>
-                    
+
                   </ul>
 
                 </div>
@@ -89,14 +89,14 @@ function Blog() {
 
                   <ul className={blog.txt_ctr_ul}>
                     <li className={blog.ul__li_1}>
-                      <FaUser  className={blog.li_1__icon}/>
+                      <FaUser className={blog.li_1__icon} />
                       <p className={blog.li_1__p}>Travel, Lifestyle</p>
                     </li>
                     <li className={blog.ul__li_1}>
-                      <FaComment  className={blog.li_1__icon}/>
+                      <FaComment className={blog.li_1__icon} />
                       <p className={blog.li_1__p}>03 Comments</p>
                     </li>
-                    
+
                   </ul>
 
                 </div>
@@ -122,14 +122,14 @@ function Blog() {
 
                   <ul className={blog.txt_ctr_ul}>
                     <li className={blog.ul__li_1}>
-                      <FaUser  className={blog.li_1__icon}/>
+                      <FaUser className={blog.li_1__icon} />
                       <p className={blog.li_1__p}>Travel, Lifestyle</p>
                     </li>
                     <li className={blog.ul__li_1}>
-                      <FaComment  className={blog.li_1__icon}/>
+                      <FaComment className={blog.li_1__icon} />
                       <p className={blog.li_1__p}>03 Comments</p>
                     </li>
-                    
+
                   </ul>
 
                 </div>
@@ -155,14 +155,14 @@ function Blog() {
 
                   <ul className={blog.txt_ctr_ul}>
                     <li className={blog.ul__li_1}>
-                      <FaUser  className={blog.li_1__icon}/>
+                      <FaUser className={blog.li_1__icon} />
                       <p className={blog.li_1__p}>Travel, Lifestyle</p>
                     </li>
                     <li className={blog.ul__li_1}>
-                      <FaComment  className={blog.li_1__icon}/>
+                      <FaComment className={blog.li_1__icon} />
                       <p className={blog.li_1__p}>03 Comments</p>
                     </li>
-                    
+
                   </ul>
 
                 </div>
@@ -180,8 +180,8 @@ function Blog() {
 
             </div>
           </div>
-          
-          
+
+
           {/* Right ctr */}
           <div className={blog.blog_ctr_right}>
 
@@ -189,15 +189,13 @@ function Blog() {
 
               {/* Search Ctr */}
               <div className={blog.rctr_search}>
-                <form className={blog.sctr_form}>
-                  <div className={blog.form_inp}>
-                    <input type='text' placeholder='Search Keyword' className={blog.form__inp}/>
-                    <button className={blog.from__btn}>
-                      <FaSearch className={blog.btn_icon}/>
-                    </button>
-                  </div >
-                  <button className={blog.form_search}>SEARCH</button>
-                </form>
+                <div className={blog.form_inp}>
+                  <input type='text' placeholder='Search Keyword' className={blog.form__inp} />
+                  <button className={blog.from__btn}>
+                    <FaSearch className={blog.btn_icon} />
+                  </button>
+                </div >
+                <button className={blog.form_search}>SEARCH</button>
               </div>
 
               {/* Category ctr */}
@@ -226,40 +224,48 @@ function Blog() {
               {/* Recent post */}
               <div className={blog.rctr_recent_post}>
 
+                <h3 className={blog.post_ctr_h3}>Recent Post</h3>
+                
                 {/* Blog post 1 */}
                 <div className={blog.post_ctr}>
-                  <h3 className={blog.post_ctr_h3}>Recent Post</h3>
+
                   <div className={blog.post_ctr_img}>
-                    <img src={blog_insta_img_1} alt='blog_insta_img' className={blog.pcimg__img}/>
-                    <div className={blog.pcimg_ctr}>
-                      <p className={blog.pcimg_ctr_p1}>From life was you fish...</p>
-                      <p className={blog.pcimg_ctr_p2}>January 12, 2019</p>
-                    </div>
+                    <img src={blog_insta_img_1} alt='blog_insta_img' className={blog.pcimg__img} />
                   </div>
+
+                  <div className={blog.pcimg_ctr}>
+                    <p className={blog.pcimg_ctr_p1}>From life was you fish...</p>
+                    <p className={blog.pcimg_ctr_p2}>January 12, 2019</p>
+                  </div>
+                  
                 </div>
 
                 {/* Blog post 2 */}
                 <div className={blog.post_ctr}>
-                  <h3 className={blog.post_ctr_h3}>Recent Post</h3>
+
                   <div className={blog.post_ctr_img}>
-                    <img src={blog_insta_img_1} alt='blog_insta_img' className={blog.pcimg__img}/>
-                    <div className={blog.pcimg_ctr}>
-                      <p className={blog.pcimg_ctr_p1}>From life was you fish...</p>
-                      <p className={blog.pcimg_ctr_p2}>January 12, 2019</p>
-                    </div>
+                    <img src={blog_insta_img_1} alt='blog_insta_img' className={blog.pcimg__img} />
                   </div>
+
+                  <div className={blog.pcimg_ctr}>
+                    <p className={blog.pcimg_ctr_p1}>From life was you fish...</p>
+                    <p className={blog.pcimg_ctr_p2}>January 12, 2019</p>
+                  </div>
+                  
                 </div>
 
                 {/* Blog post 3 */}
                 <div className={blog.post_ctr}>
-                  <h3 className={blog.post_ctr_h3}>Recent Post</h3>
+
                   <div className={blog.post_ctr_img}>
-                    <img src={blog_insta_img_1} alt='blog_insta_img' className={blog.pcimg__img}/>
-                    <div className={blog.pcimg_ctr}>
-                      <p className={blog.pcimg_ctr_p1}>From life was you fish...</p>
-                      <p className={blog.pcimg_ctr_p2}>January 12, 2019</p>
-                    </div>
+                    <img src={blog_insta_img_1} alt='blog_insta_img' className={blog.pcimg__img} />
                   </div>
+
+                  <div className={blog.pcimg_ctr}>
+                    <p className={blog.pcimg_ctr_p1}>From life was you fish...</p>
+                    <p className={blog.pcimg_ctr_p2}>January 12, 2019</p>
+                  </div>
+                  
                 </div>
 
               </div>
@@ -284,12 +290,12 @@ function Blog() {
               <div className={blog.rctr_instafeeds}>
                 <h3 className={blog.ifeeds_h3}>Instagram Feeds</h3>
                 <div className={blog.ifeeds_img_ctr}>
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs}/>
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs}/>
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs}/>
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs}/>
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs}/>
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs}/>
+                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
                 </div>
               </div>
 
