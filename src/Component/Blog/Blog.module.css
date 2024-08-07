@@ -1,0 +1,257 @@
+.header_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.htxt_background {
+    background: url("../../Assets/img/hero/hero2.png");
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(min-width:426px) {
+    .htxt_background {
+        height: 350px;
+    }
+
+    .text_h1_header {
+        font-size: 30px;
+    }
+}
+
+@media(min-width:769px) {
+    .htxt_background {
+        height: 400px;
+    }
+}
+
+
+.text_h1_header {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+
+
+
+/* Start */
+.blog_page {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_container {
+    border: 1px dotted black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    gap: 20px;
+    padding:5px;
+}
+
+
+/* left ctr */
+
+/* Card page */
+.blog_ctr_left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    flex: 2;
+}
+
+.left_card_ctr {
+    /* border: 1px solid black; */
+    /* padding:10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.card_ctr_box {
+    /* border: 2px solid darkcyan; */
+    display: flex;
+    flex-direction: column;
+}
+
+.img_ctr {
+    width: 100%;
+    position: relative;
+}
+
+.img_ctr__img {
+    width: 100%;
+    height: 100%;
+}
+
+.img__img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Date Box */
+.img_ctr__date{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ff2121;
+    padding: 8px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    font-weight: 500;
+}
+.img_ctr__date:hover{
+    background: transparent;
+    color: #ff2121;
+}
+
+/* left ---> Text ctr */
+
+.txt_ctr {
+    background: white;
+    box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+    padding: 20px;
+}
+.txt_ctr_h3{
+    font-size: 24px;
+    color: #0b1c39;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.txt_ctr_p{
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #501672;
+    font-size: 16px;
+}
+
+
+/* Txt CTR ---> ul */
+.txt_ctr_ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid black; */
+    justify-content: flex-start;
+}
+.ul__li_1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    color: #999;
+}
+.ul__li_1:nth-child(2)::before{
+    content: "|";
+    top: 0;
+    left: 0;
+    padding-right: 10px;
+}
+.li_1__icon{
+    font-size: 14px;
+}
+.li_1__p{
+    font-size: 14px;
+}
+/* Pagination */
+
+
+.left_pagination {
+
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid darkgoldenrod; */
+
+}
+
+
+
+@media(max-width:992px) {
+    .blog_container {
+        flex-direction: column;
+    }
+
+    .img_ctr__img {
+        width: 100%;
+    }
+
+    .blog_ctr_left {
+        flex: 1;
+    }
+}
+
+@media(max-width:768px) {
+    .blog_container {
+        width: 90%;
+    }
+    .txt_ctr_h3{
+        font-size: 18px;
+    }
+    
+    .txt_ctr_p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:576px) {
+   
+    .txt_ctr_p{
+        font-size: 13px;
+    }
+    .img_ctr__date{
+        padding: 5px 10px;
+        border-radius: 5px;
+        left: 10px;
+        bottom: -10px;
+    }
+    .li_1__icon{
+        font-size: 10px;
+    }
+    .li_1__p{
+        font-size: 10px;
+    }
+}
+
+
+
+/* Right ctr */
+
+.blog_ctr_right {
+    border: 1px solid lawngreen;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+
+
+.pcimg__img {
+    width: 80px;
+    height: 80px;
+}
+
+@media(max-width:992px) {}
