@@ -9,10 +9,10 @@ import blog_insta_img_1 from "../../Assets/img/blog/blog_1.png"
 // import blog_insta_img_3 from "../../Assets/img/blog/blog_3.png"
 // import blog_insta_img_4 from "../../Assets/img/blog/blog_4.png"
 import blog_insta_post1 from "../../Assets/img/post/post_1.png"
-// import blog_insta_post2 from "../../Assets/img/post/post_2.png"
-// import blog_insta_post3 from "../../Assets/img/post/post_3.png"
-// import blog_insta_post4 from "../../Assets/img/post/post_4.png"
-// import blog_insta_post5 from "../../Assets/img/post/post_5.png"
+import blog_insta_post2 from "../../Assets/img/post/post_2.png"
+import blog_insta_post3 from "../../Assets/img/post/post_3.png"
+import blog_insta_post4 from "../../Assets/img/post/post_4.png"
+import blog_insta_post5 from "../../Assets/img/post/post_5.png"
 import { FaUser } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
@@ -225,7 +225,7 @@ function Blog() {
               <div className={blog.rctr_recent_post}>
 
                 <h3 className={blog.post_ctr_h3}>Recent Post</h3>
-                
+
                 {/* Blog post 1 */}
                 <div className={blog.post_ctr}>
 
@@ -237,7 +237,7 @@ function Blog() {
                     <p className={blog.pcimg_ctr_p1}>From life was you fish...</p>
                     <p className={blog.pcimg_ctr_p2}>January 12, 2019</p>
                   </div>
-                  
+
                 </div>
 
                 {/* Blog post 2 */}
@@ -251,7 +251,7 @@ function Blog() {
                     <p className={blog.pcimg_ctr_p1}>From life was you fish...</p>
                     <p className={blog.pcimg_ctr_p2}>January 12, 2019</p>
                   </div>
-                  
+
                 </div>
 
                 {/* Blog post 3 */}
@@ -265,7 +265,7 @@ function Blog() {
                     <p className={blog.pcimg_ctr_p1}>From life was you fish...</p>
                     <p className={blog.pcimg_ctr_p2}>January 12, 2019</p>
                   </div>
-                  
+
                 </div>
 
               </div>
@@ -290,20 +290,35 @@ function Blog() {
               <div className={blog.rctr_instafeeds}>
                 <h3 className={blog.ifeeds_h3}>Instagram Feeds</h3>
                 <div className={blog.ifeeds_img_ctr}>
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
-                  <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  <div className={blog.ifeeds_single_img_ctr}>
+                    <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  </div>
+                  <div className={blog.ifeeds_single_img_ctr}>
+                    <img src={blog_insta_post2} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  </div>
+                  <div className={blog.ifeeds_single_img_ctr}>
+                    <img src={blog_insta_post3} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  </div>
+                  <div className={blog.ifeeds_single_img_ctr}>
+                    <img src={blog_insta_post4} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  </div>
+                  <div className={blog.ifeeds_single_img_ctr}>
+                    <img src={blog_insta_post5} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  </div>
+                  <div className={blog.ifeeds_single_img_ctr}>
+                    <img src={blog_insta_post1} alt='insta feeds 1' className={blog.ifeeds__imgs} />
+                  </div>
                 </div>
               </div>
 
 
               {/* News Letter */}
               <div className={blog.rctr_newsletter}>
-                <input type='email' placeholder='Enter Email' className={blog.nl_inp} />
-                <button className={blog.nl_btn}>SEARCH</button>
+                <h3 className={blog.rctr_nl__h3}>Instagram Feeds</h3>
+                <div className={blog.nl_inp_btn_ctr}>
+                  <input type='email' placeholder='Enter Email' className={blog.nl_inp} />
+                  <button className={blog.nl_btn}>SUBSCRIBE</button>
+                </div>
               </div>
             </div>
           </div>
