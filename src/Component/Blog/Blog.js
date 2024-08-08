@@ -55,7 +55,30 @@ const data = [
     image: blogImg3,
     headline: "Google inks pact for new 35-storey office",
     discription: "ui voluptatem numquam et animi quasi et quos quisquam est exercitationem recusandae est consequuntur tempora. Qui nostrum accusamus in eligendi repellendus sit nesciunt porro est blanditiis vo"
-  }
+  },{
+    id: 7,
+    image: blogImg1,
+    headline: "Google inks pact for new 35-storey office",
+    discription: "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."
+  },
+  {
+    id: 8,
+    image: blogImg3,
+    headline: "Section 1.10.32 of de Finibus Bonorum et Malorum, written by Cicero in 45 BC",
+    discription: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo e"
+  },
+  {
+    id: 9,
+    image: blogImg2,
+    headline: "1914 translation by H. Rackham",
+    discription: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure"
+  },
+  {
+    id: 10,
+    image: blogImg3,
+    headline: "Google inks pact for new 35-storey office",
+    discription: "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."
+  },
 ]
 
 
@@ -93,8 +116,8 @@ function Blog() {
 
 
   // const [pageNumberLimit,setPageNumberLimit] = useState(2);
-  // const [maxPageNumberLimit,setMaxPageNumberLimit] = useState(2);
-  // const [minPageNumberLimit,setMinPageNumberLimit] = useState(1);
+  const [maxPageNumberLimit, setMaxPageNumberLimit] = useState(pages.length);
+  const [minPageNumberLimit,setMinPageNumberLimit] = useState(1);
 
   const renderPageNumbers = pages.map((number) => {
     return (
@@ -174,15 +197,16 @@ function Blog() {
             {/* Pagination */}
             <div className={blog.left_pagination}>
               <div className={blog.pagination_btn_ctr}>
-                <div  className={` ${blog.pn_btn_ctr}`}>
+                <div className={`${currentPage === minPageNumberLimit ? blog.pn_btn_ctr_none : blog.pn_btn_ctr}`}>
                   <GrFormPrevious className={blog.icon__btn} onClick={handlePreviousBtn} />
                 </div>
+
                 <div className={blog.ul_btn_ctr}>
                   <ul className={blog.ul_ctr}>
                     {renderPageNumbers}
                   </ul>
                 </div>
-                <div className={blog.pn_btn_ctr}>
+                <div className={`${currentPage === maxPageNumberLimit ? blog.pn_btn_ctr_none : blog.pn_btn_ctr}`}>
                   <MdOutlineNavigateNext className={blog.icon__btn} onClick={handleNextBtn} />
                 </div>
               </div>
