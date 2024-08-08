@@ -63,8 +63,56 @@ const data = [
 
 function Blog() {
 
-  const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemPerPage, setItemPerPage] = useState(3);
 
+  const pages = [];
+
+  for (let i = 1; i <= Math.ceil(data.length / itemPerPage); i++) {
+    pages.push(i);
+  }
+
+
+
+  const indexOfLastItem = currentPage * itemPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemPerPage;
+  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem)
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
+  const handleClick = (event) => {
+    setCurrentPage(Number(event.target.id));
+    scrollToTop();
+  }
+
+
+
+  // const [pageNumberLimit,setPageNumberLimit] = useState(2);
+  // const [maxPageNumberLimit,setMaxPageNumberLimit] = useState(2);
+  // const [minPageNumberLimit,setMinPageNumberLimit] = useState(1);
+
+  const renderPageNumbers = pages.map((number) => {
+    return (
+      <li key={number} id={number} className={`${blog.ul_ctr__li} ${currentPage === number ? blog.ul_ctr__li + ' ' + blog.active : ''}`} onClick={handleClick}>
+        {number}
+      </li>
+    );
+  })
+
+
+  const handleNextBtn = () => {
+    setCurrentPage(currentPage + 1);
+    scrollToTop();
+  }
+  const handlePreviousBtn = () => {
+    setCurrentPage(currentPage - 1);
+    scrollToTop();
+  }
 
   return (
     <div className={blog.blog}>
@@ -85,39 +133,40 @@ function Blog() {
             <div className={blog.left_card_ctr}>
 
               {
-                data.map((ele, index) => {
-                  return(
-                  <div className={blog.card_ctr_box} key={index}>
+                currentItems.map((ele, index) => {
+                  return (
+                    <div className={blog.card_ctr_box} key={index}>
 
-                    <div className={blog.img_ctr}>
-                      <div className={blog.img_ctr__img}>
-                        <img src={ele.image} alt="blogImg1" className={blog.img__img} />
+                      <div className={blog.img_ctr}>
+                        <div className={blog.img_ctr__img}>
+                          <img src={ele.image} alt="blogImg1" className={blog.img__img} />
+                        </div>
+                        <div className={blog.img_ctr__date}>
+                          <p className={blog.img__date}>15</p>
+                          <p className={blog.img__month}>Jan</p>
+                        </div>
                       </div>
-                      <div className={blog.img_ctr__date}>
-                        <p className={blog.img__date}>15</p>
-                        <p className={blog.img__month}>Jan</p>
+                      {/* text ctr */}
+                      <div className={blog.txt_ctr}>
+                        <h3 className={blog.txt_ctr_h3}>{ele.headline}</h3>
+                        <p className={blog.txt_ctr_p}>{ele.discription}</p>
+
+                        <ul className={blog.txt_ctr_ul}>
+                          <li className={blog.ul__li_1}>
+                            <FaUser className={blog.li_1__icon} />
+                            <p className={blog.li_1__p}>Travel, Lifestyle</p>
+                          </li>
+                          <li className={blog.ul__li_1}>
+                            <FaComment className={blog.li_1__icon} />
+                            <p className={blog.li_1__p}>03 Comments</p>
+                          </li>
+
+                        </ul>
+
                       </div>
                     </div>
-                    {/* text ctr */}
-                    <div className={blog.txt_ctr}>
-                      <h3 className={blog.txt_ctr_h3}>{ele.headline}</h3>
-                      <p className={blog.txt_ctr_p}>{ele.discription}</p>
-
-                      <ul className={blog.txt_ctr_ul}>
-                        <li className={blog.ul__li_1}>
-                          <FaUser className={blog.li_1__icon} />
-                          <p className={blog.li_1__p}>Travel, Lifestyle</p>
-                        </li>
-                        <li className={blog.ul__li_1}>
-                          <FaComment className={blog.li_1__icon} />
-                          <p className={blog.li_1__p}>03 Comments</p>
-                        </li>
-
-                      </ul>
-
-                    </div>
-                  </div>
-                );})
+                  );
+                })
               }
 
             </div>
@@ -125,19 +174,16 @@ function Blog() {
             {/* Pagination */}
             <div className={blog.left_pagination}>
               <div className={blog.pagination_btn_ctr}>
-                <div className={blog.pn_btn_ctr}>
-                  <GrFormPrevious className={blog.icon__btn} />
+                <div  className={` ${blog.pn_btn_ctr}`}>
+                  <GrFormPrevious className={blog.icon__btn} onClick={handlePreviousBtn} />
                 </div>
                 <div className={blog.ul_btn_ctr}>
                   <ul className={blog.ul_ctr}>
-                    <li className={blog.ul_ctr__li}>1</li>
-                    <li className={blog.ul_ctr__li}>2</li>
-                    <li className={blog.ul_ctr__li}>3</li>
-                    <li className={blog.ul_ctr__li}>4</li>
+                    {renderPageNumbers}
                   </ul>
                 </div>
                 <div className={blog.pn_btn_ctr}>
-                  <MdOutlineNavigateNext className={blog.icon__btn} />
+                  <MdOutlineNavigateNext className={blog.icon__btn} onClick={handleNextBtn} />
                 </div>
               </div>
             </div>
