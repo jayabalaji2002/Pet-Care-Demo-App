@@ -5,9 +5,9 @@ import blogImg2 from "../../Assets/img/blog/single_blog_2.png"
 import blogImg3 from "../../Assets/img/blog/single_blog_3.png"
 import blogImg4 from "../../Assets/img/blog/single_blog_4.png"
 import blog_insta_img_1 from "../../Assets/img/blog/blog_1.png"
-// import blog_insta_img_2 from "../../Assets/img/blog/blog_2.png"
-// import blog_insta_img_3 from "../../Assets/img/blog/blog_3.png"
-// import blog_insta_img_4 from "../../Assets/img/blog/blog_4.png"
+import blog_insta_img_2 from "../../Assets/img/blog/blog_2.png"
+import blog_insta_img_3 from "../../Assets/img/blog/blog_3.png"
+import blog_insta_img_4 from "../../Assets/img/blog/blog_4.png"
 import blog_insta_post1 from "../../Assets/img/post/post_1.png"
 import blog_insta_post2 from "../../Assets/img/post/post_2.png"
 import blog_insta_post3 from "../../Assets/img/post/post_3.png"
@@ -16,6 +16,8 @@ import blog_insta_post5 from "../../Assets/img/post/post_5.png"
 import { FaUser } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
+import { MdOutlineNavigateNext } from "react-icons/md";
+import { GrFormPrevious } from "react-icons/gr";
 
 function Blog() {
   return (
@@ -171,13 +173,22 @@ function Blog() {
 
             {/* Pagination */}
             <div className={blog.left_pagination}>
-              <p>Previous</p>
-              <p>1</p>
-              <p>1</p>
-              <p>1</p>
-              <p>1</p>
-              <p>Next</p>
-
+              <div className={blog.pagination_btn_ctr}>
+                <div className={blog.pn_btn_ctr}>
+                  <GrFormPrevious className={blog.icon__btn}/>
+                </div>
+                <div className={blog.ul_btn_ctr}>
+                  <ul className={blog.ul_ctr}>
+                    <li className={blog.ul_ctr__li}>1</li>
+                    <li className={blog.ul_ctr__li}>2</li>
+                    <li className={blog.ul_ctr__li}>3</li>
+                    <li className={blog.ul_ctr__li}>4</li>
+                  </ul>
+                </div>
+                <div className={blog.pn_btn_ctr}>
+                  <MdOutlineNavigateNext className={blog.icon__btn}/>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -244,7 +255,7 @@ function Blog() {
                 <div className={blog.post_ctr}>
 
                   <div className={blog.post_ctr_img}>
-                    <img src={blog_insta_img_1} alt='blog_insta_img' className={blog.pcimg__img} />
+                    <img src={blog_insta_img_2} alt='blog_insta_img' className={blog.pcimg__img} />
                   </div>
 
                   <div className={blog.pcimg_ctr}>
@@ -258,7 +269,21 @@ function Blog() {
                 <div className={blog.post_ctr}>
 
                   <div className={blog.post_ctr_img}>
-                    <img src={blog_insta_img_1} alt='blog_insta_img' className={blog.pcimg__img} />
+                    <img src={blog_insta_img_3} alt='blog_insta_img' className={blog.pcimg__img} />
+                  </div>
+
+                  <div className={blog.pcimg_ctr}>
+                    <p className={blog.pcimg_ctr_p1}>From life was you fish...</p>
+                    <p className={blog.pcimg_ctr_p2}>January 12, 2019</p>
+                  </div>
+
+                </div>
+
+                {/* Blog post 4 */}
+                <div className={blog.post_ctr}>
+
+                  <div className={blog.post_ctr_img}>
+                    <img src={blog_insta_img_4} alt='blog_insta_img' className={blog.pcimg__img} />
                   </div>
 
                   <div className={blog.pcimg_ctr}>
