@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import blog from "./Blog.module.css"
 import blogImg1 from "../../Assets/img/blog/single_blog_1.png"
 import blogImg2 from "../../Assets/img/blog/single_blog_2.png"
@@ -137,6 +137,7 @@ function Blog() {
     scrollToTop();
   }
 
+  
   return (
     <div className={blog.blog}>
 

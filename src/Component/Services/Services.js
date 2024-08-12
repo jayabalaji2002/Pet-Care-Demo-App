@@ -1,5 +1,7 @@
 import React from 'react'
 import svs from './Services.module.css'
+import Service from "../Home/Service/Service"
+import Contact from "../Home/Contact/Contact"
 
 function Services() {
   return (
@@ -9,6 +11,8 @@ function Services() {
            <h1 className={svs.text_h1_header}>Services</h1>     
         </div>
       </div>
+      <Service/>
+      <Contact/>
     </div>
   )
 }
